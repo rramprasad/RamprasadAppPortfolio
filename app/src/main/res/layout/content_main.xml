@@ -69,7 +69,7 @@
 
             <Button
                 android:id="@+id/button_app6"
-                style="@style/AppButtonStyle"
+                style="@style/AppButtonStyle.Red"
                 android:layout_marginTop="@dimen/button_margin"
                 android:onClick="launchApp"
                 android:text="@string/capstone_my_own_app" />

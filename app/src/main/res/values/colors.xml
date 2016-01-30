@@ -5,5 +5,9 @@
     <color name="colorAccent">#7C4DFF</color>
 
     <color name="title_color">#311B92</color>
-    <color name="button_color_normal">#673AB7</color>
+
+    <color name="unique_button_color_normal">#F44336</color>
+    <color name="unique_button_color_pressed">#D32F2F</color>
+    <color name="unique_button_color_focused">#FF5252</color>
+
 </resources>

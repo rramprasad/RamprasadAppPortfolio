@@ -30,4 +30,10 @@
         <item name="android:background">@drawable/button_background</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
+
+    <style name="AppButtonStyle.Red">
+        <item name="android:background">@drawable/button_background_red</item>
+    </style>
+
+
 </resources>
