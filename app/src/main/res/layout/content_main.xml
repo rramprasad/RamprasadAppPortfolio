@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.exinnos.ramprasadappportfolio.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview_title"
+            style="@style/TitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content_title" />
+
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_title"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_left_for_buttons_layout"
+            android:paddingRight="@dimen/padding_right_for_buttons_layout"
+            android:paddingTop="@dimen/padding_top_for_buttons_layout">
+
+            <Button
+                android:id="@+id/button_app1"
+                style="@style/AppButtonStyle"
+                android:onClick="launchApp"
+                android:text="@string/spotify_streamer" />
+
+            <Button
+                android:id="@+id/button_app2"
+                style="@style/AppButtonStyle"
+                android:layout_marginTop="@dimen/button_margin"
+                android:onClick="launchApp"
+                android:text="@string/football_scores_app" />
+
+            <Button
+                android:id="@+id/button_app3"
+                style="@style/AppButtonStyle"
+                android:layout_marginTop="@dimen/button_margin"
+                android:onClick="launchApp"
+                android:text="@string/library_app" />
+
+            <Button
+                android:id="@+id/button_app4"
+                style="@style/AppButtonStyle"
+                android:layout_marginTop="@dimen/button_margin"
+                android:onClick="launchApp"
+                android:text="@string/build_it_bigger" />
+
+            <Button
+                android:id="@+id/button_app5"
+                style="@style/AppButtonStyle"
+                android:layout_marginTop="@dimen/button_margin"
+                android:onClick="launchApp"
+                android:text="@string/xyz_reader" />
+
+            <Button
+                android:id="@+id/button_app6"
+                style="@style/AppButtonStyle"
+                android:layout_marginTop="@dimen/button_margin"
+                android:onClick="launchApp"
+                android:text="@string/capstone_my_own_app" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
