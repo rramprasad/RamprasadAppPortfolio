@@ -34,41 +34,41 @@
             android:paddingTop="@dimen/padding_top_for_buttons_layout">
 
             <Button
-                android:id="@+id/button_app1"
+                android:id="@+id/button_spotify_streamer"
                 style="@style/AppButtonStyle"
                 android:onClick="launchApp"
                 android:text="@string/spotify_streamer" />
 
             <Button
-                android:id="@+id/button_app2"
+                android:id="@+id/button_football_scores_app"
                 style="@style/AppButtonStyle"
                 android:layout_marginTop="@dimen/button_margin"
                 android:onClick="launchApp"
                 android:text="@string/football_scores_app" />
 
             <Button
-                android:id="@+id/button_app3"
+                android:id="@+id/button_library_app"
                 style="@style/AppButtonStyle"
                 android:layout_marginTop="@dimen/button_margin"
                 android:onClick="launchApp"
                 android:text="@string/library_app" />
 
             <Button
-                android:id="@+id/button_app4"
+                android:id="@+id/button_build_it_bigger"
                 style="@style/AppButtonStyle"
                 android:layout_marginTop="@dimen/button_margin"
                 android:onClick="launchApp"
                 android:text="@string/build_it_bigger" />
 
             <Button
-                android:id="@+id/button_app5"
+                android:id="@+id/button_xyz_reader"
                 style="@style/AppButtonStyle"
                 android:layout_marginTop="@dimen/button_margin"
                 android:onClick="launchApp"
                 android:text="@string/xyz_reader" />
 
             <Button
-                android:id="@+id/button_app6"
+                android:id="@+id/button_capstone_my_own_app"
                 style="@style/AppButtonStyle.Red"
                 android:layout_marginTop="@dimen/button_margin"
                 android:onClick="launchApp"
