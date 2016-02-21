@@ -1,5 +1,6 @@
 package com.exinnos.ramprasadappportfolio;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -21,16 +22,6 @@ public class MainActivity extends AppCompatActivity {
         // Set toolbar for this activity.
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        // For now we dont need this FAB button.So commented this.
-        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
     }
 
     @Override
@@ -58,27 +49,27 @@ public class MainActivity extends AppCompatActivity {
     public void launchApp(View view) {
 
         switch (view.getId()) {
-            case R.id.button_app1:
-                showMessage(view, "spotify streamer");
+            case R.id.button_movies_app:
+                launchApp("com.exinnos.popularmovies");
                 break;
 
-            case R.id.button_app2:
+            case R.id.button_football_scores_app:
                 showMessage(view, "scores app");
                 break;
 
-            case R.id.button_app3:
+            case R.id.button_library_app:
                 showMessage(view, "library app");
                 break;
 
-            case R.id.button_app4:
+            case R.id.button_build_it_bigger:
                 showMessage(view, "build it bigger");
                 break;
 
-            case R.id.button_app5:
+            case R.id.button_xyz_reader:
                 showMessage(view, "xyz reader");
                 break;
 
-            case R.id.button_app6:
+            case R.id.button_capstone_my_own_app:
                 showMessage(view, "capstone app");
                 break;
 
@@ -87,15 +78,23 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Show a message with given app name.
-     *
      * @param view
      * @param appName
      */
     private void showMessage(View view, String appName) {
-
         Snackbar.make(view, "This button will launch my " + appName + "!", Snackbar.LENGTH_LONG).show();
-
     }
+
+    /**
+     * Launch app with given package name
+     * @param packageName
+     */
+    private void launchApp(String packageName) {
+        Intent launchIntentForPackage = getPackageManager().getLaunchIntentForPackage(packageName);
+        startActivity(launchIntentForPackage);
+    }
+
+
 
 
 }

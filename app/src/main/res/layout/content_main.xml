@@ -34,10 +34,10 @@
             android:paddingTop="@dimen/padding_top_for_buttons_layout">
 
             <Button
-                android:id="@+id/button_spotify_streamer"
+                android:id="@+id/button_movies_app"
                 style="@style/AppButtonStyle"
                 android:onClick="launchApp"
-                android:text="@string/spotify_streamer" />
+                android:text="@string/movies_app" />
 
             <Button
                 android:id="@+id/button_football_scores_app"
